@@ -1,0 +1,10 @@
+*.sh text eol=lf
+Makefile text eol=lf
+*.mk text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.asm text eol=lf
+*.cmd text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+communications/openvlc/beaglebone_black/iperf_client_* text eol=lf

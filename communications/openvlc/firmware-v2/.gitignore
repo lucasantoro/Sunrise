@@ -1,0 +1,16 @@
+firmware/build-host/
+firmware/build-host-*/
+Debug/
+Release/
+*.launch
+
+
+# Build outputs. Nothing generated belongs in the repository.
+firmware/build*/
+build/
+Debug/
+Release/
+*.o
+*.obj
+*.elf
+*.map

@@ -1,0 +1,12 @@
+# Bench output lives here, not in /var/log.
+#
+# Everything a run produces -- journal snapshots, context files and the
+# STM32 RX captures -- lands in this directory so one folder holds the whole
+# run and can be archived or handed over as it is.
+#
+# The contents are not tracked: they are per-run evidence, often megabytes,
+# and belong in a report or a docs/captures/ tarball when they matter.
+
+*
+!.gitignore
+!README.md

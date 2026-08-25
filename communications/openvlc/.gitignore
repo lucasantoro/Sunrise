@@ -1,0 +1,39 @@
+# OpenVLC build artifacts and generated output (never commit these)
+
+# Archives / dumps at the openvlc root only (e.g. the old 37 MB stm32.zip).
+# NOTE: this is intentionally NOT a global *.zip — the hardware/ fabrication
+# packages (Gerber/NC-drill .zip per PCB revision) ARE tracked.
+/*.zip
+
+# STM32 CubeIDE generated output
+stm32-rx/STM32CubeIDE/Debug/
+stm32-rx/STM32CubeIDE/Release/
+
+# STM32 host-test build tree (CMake)
+stm32-rx/firmware/build-host/
+stm32-rx/firmware/build/
+
+# Python caches (raspberry-gateway tools)
+__pycache__/
+*.pyc
+
+# Kernel-module / PRU build leftovers (BeagleBone)
+*.o
+*.ko
+*.mod.c
+*.mod
+.*.cmd
+Module.symvers
+Module.markers
+modules.order
+.tmp_versions/
+
+# Altium working artifacts (hardware/) - regenerated locally, keep out of git
+# if the original PCB folders are ever re-synced over the tree.
+hardware/**/History/
+hardware/**/__Previews/
+hardware/**/Project Logs for */
+hardware/**/Project Outputs for */
+*.PrjPcbStructure
+*.SchDocPreview
+*.PcbDocPreview

@@ -1,0 +1,5 @@
+firmware/build-host/
+firmware/build-host-*/
+Debug/
+Release/
+*.launch

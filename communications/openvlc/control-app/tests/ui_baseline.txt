@@ -1,0 +1,528 @@
+HistoryLineEdit		type a command, Up/Down for history - e.g. systemctl status openvlc-rx
+PlotWidget		
+PlotWidget		
+PlotWidget		
+PlotWidget		
+QCheckBox		embed in window
+QComboBox		50 - validated profile (~1.0 Mbps optical service)|40 - experimental faster profile
+QComboBox		Camera on Node B → receive on Node A|Camera on Node A → receive on Node B|Legacy TX Pi → RX Pi
+QComboBox		RX Pi (openvlc-rx)|Transceiver A (openvlc-transceiver)|Transceiver B (openvlc-transceiver)
+QComboBox		RX Pi|TX Pi|BeagleBone|Transceiver A|Transceiver B
+QComboBox		Stable 360p15|Sharp 480p15|Low latency 360p20
+QComboBox		Transceiver A -> B|Transceiver B -> A|Transceiver full duplex|Legacy TX Pi -> RX Pi
+QComboBox		cbr|capped-crf
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame		
+QFrame	card	
+QGroupBox		1  Verify
+QGroupBox		2  Prepare link
+QGroupBox		3  Performance test - iperf UDP
+QGroupBox		Advanced encoding settings
+QGroupBox		Advanced paths and ports
+QGroupBox		BeagleBone TX (via TX Pi)
+QGroupBox		Capture utility
+QGroupBox		Decoder status
+QGroupBox		Envelope (ADC counts, 0-255)
+QGroupBox		Link services / journals
+QGroupBox		Live metrics
+QGroupBox		PC and validated TX profile
+QGroupBox		RX Raspberry Pi (bridge)
+QGroupBox		TX Raspberry Pi (feeds BBB)
+QGroupBox		Transceiver A Pi (openvlc-transceiver) - empty host hides it
+QGroupBox		Transceiver B Pi (openvlc-transceiver) - empty host hides it
+QGroupBox		Transmitter profile
+QLabel		
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		-
+QLabel		Activity log
+QLabel		BBB TX dir
+QLabel		COMP
+QLabel		COMP crc interval:
+QLabel		COMP crc total:
+QLabel		COMP duty (%):
+QLabel		COMP sync interval:
+QLabel		COMP sync total:
+QLabel		COMP threshold DAC:
+QLabel		COMP threshold mV:
+QLabel		Cache
+QLabel		Camera location
+QLabel		Coming soon - the STM32 firmware does not sample the VAGC signal yet. Once the ADC capture is implemented (ADCRAW/ADCPHASE log lines), this tab will light up automatically: set AGC_FEATURE_READY = True in app.py.
+QLabel		Diagnostics log
+QLabel		Direction
+QLabel		Duration
+QLabel		HOST
+QLabel		IP rate
+QLabel		IP rate (kbps):
+QLabel		LINK  UNKNOWN
+QLabel		Live service journal
+QLabel		Node B camera → Node A receiver camera SSH: 192.168.50.127  •  receiver SSH: 192.168.50.206  •  optical destination: 192.168.0.1
+QLabel		Output
+QLabel		PC relay port
+QLabel		PHY
+QLabel		PHY pstat:
+QLabel		Preset
+QLabel		Preview: stopped
+QLabel		Quick diagnostics:
+QLabel		RS corrections:
+QLabel		RX bridge (openvlc-rx)
+QLabel		RX gateway dir
+QLabel		Read-only checks for SSH, routes, services, tools and camera.
+QLabel		Receiver preview
+QLabel		Record 15 seconds at the receiver, download the stream and open it in VLC.
+QLabel		SESSION  STOPPED
+QLabel		SFD errors:
+QLabel		SFD lock:
+QLabel		SFD mode:
+QLabel		SFD pre reject:
+QLabel		SFD syncs:
+QLabel		SFDSYNC
+QLabel		Source
+QLabel		TRX RX fps:
+QLabel		TRX RX kbps:
+QLabel		TRX TX fps:
+QLabel		TRX TX kbps:
+QLabel		TRX rx gap interval:
+QLabel		TRX tx drop interval:
+QLabel		TX budget profile
+QLabel		TX gateway dir
+QLabel		Target
+QLabel		Target rate
+QLabel		Transceiver A TUN IP
+QLabel		Transceiver B TUN IP
+QLabel		Transceivers (openvlc-transceiver)
+QLabel		Transport
+QLabel		VBV buffer
+QLabel		VIDEO
+QLabel		VLC path
+QLabel		Video preview Start the session when the optical link is ready.
+QLabel		bitrate
+QLabel		burst/s:
+QLabel		capacity: run iperf first
+QLabel		capture fps
+QLabel		capture size
+QLabel		clip %
+QLabel		crf
+QLabel		decode max us:
+QLabel		decode us:
+QLabel		frame CRC interval:
+QLabel		frame crc total:
+QLabel		frame invalid interval:
+QLabel		frame invalid total:
+QLabel		frame len total:
+QLabel		frame overflow total:
+QLabel		frames/s:
+QLabel		glitch permille:
+QLabel		half-cell ticks:
+QLabel		host
+QLabel		host
+QLabel		host
+QLabel		host
+QLabel		host
+QLabel		hostdrop interval:
+QLabel		hosterr interval:
+QLabel		input format
+QLabel		invalid_ip:
+QLabel		iperf RX goodput:
+QLabel		iperf UDP payload bytes
+QLabel		iperf UDP port
+QLabel		jitter
+QLabel		jitter (%):
+QLabel		jump host (TX Pi)
+QLabel		jump password
+QLabel		jump user
+QLabel		last duty (%):
+QLabel		link: unknown
+QLabel		long edge/s:
+QLabel		max
+QLabel		mean
+QLabel		min
+QLabel		mux delay
+QLabel		muxrate
+QLabel		ok/s
+QLabel		ok/s:
+QLabel		ok/seen diag (%):
+QLabel		output fps
+QLabel		output size
+QLabel		parse status:
+QLabel		password
+QLabel		password
+QLabel		password
+QLabel		password
+QLabel		password
+QLabel		payload bytes:
+QLabel		quality score:
+QLabel		rate mode
+QLabel		raw COMP edge/s:
+QLabel		raw COMP glitch/s:
+QLabel		raw length:
+QLabel		ringdrop interval:
+QLabel		score
+QLabel		score min
+QLabel		score min:
+QLabel		seen/s:
+QLabel		seq/ring drops
+QLabel		seq_gap interval:
+QLabel		serial backlog:
+QLabel		serial baud
+QLabel		serial crc:
+QLabel		serial header:
+QLabel		serialerr interval:
+QLabel		span
+QLabel		this PC IP (UDP target)
+QLabel		timing quality:
+QLabel		tunerr:
+QLabel		user
+QLabel		user
+QLabel		user
+QLabel		user
+QLabel		user
+QLabel		video UDP port
+QLabel		x264 preset
+QLabel	appSubtitle	Visible-light link control, validation and live video
+QLabel	appTitle	OpenVLC Control Panel
+QLabel	sectionSubtitle	Capture and plot the raw AGC/ADC waveform to tune the front-end gain: aim for a full swing that touches neither 0 nor full-scale (no clipping).
+QLabel	sectionSubtitle	Configure lab endpoints, local playback and validated optical profiles.
+QLabel	sectionSubtitle	Enable OPENVLC_ADC_RAW_CAPTURE on the RX firmware so it emits 'ADCRAW n=.. d=..' lines; keep the monitor running. ADCPHASE lines update the envelope even without raw capture.
+QLabel	sectionSubtitle	Monitor live receiver health, decoder quality and delivery throughput.
+QLabel	sectionSubtitle	One command starts the RX relay/player and the selected TX camera profile.
+QLabel	sectionSubtitle	Prepare the optical chain first, then run a measured performance test. Live video is managed entirely from the Video tab.
+QLabel	sectionSubtitle	Receiver-side iperf output is authoritative. The journal monitor follows the selected receive node when possible.
+QLabel	sectionSubtitle	Run read-only preflight checks, verify SSH access and collect a support report.
+QLabel	sectionSubtitle	Send an ad-hoc command to a connected board over SSH and read its output.
+QLabel	sectionSubtitle	The transceiver service is full-duplex. Choose the iperf direction to test TX or RX separately; do not stop half of the daemon.
+QLabel	sectionTitle	AGC signal / gain tuning
+QLabel	sectionTitle	Console
+QLabel	sectionTitle	Diagnostics
+QLabel	sectionTitle	Link control
+QLabel	sectionTitle	Link quality
+QLabel	sectionTitle	Live video
+QLabel	sectionTitle	Settings
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit		
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QLineEdit	qt_spinbox_lineedit	
+QListView		
+QListView		
+QListView		
+QListView		
+QListView		
+QListView		
+QListView		
+QPlainTextEdit		
+QPlainTextEdit		
+QPlainTextEdit		
+QPlainTextEdit		
+QPushButton		Arm capture
+QPushButton		Check system
+QPushButton		Check system
+QPushButton		Clear
+QPushButton		Clear
+QPushButton		Clear
+QPushButton		Clear
+QPushButton		Clear
+QPushButton		Collect diagnostics
+QPushButton		Collect report
+QPushButton		Configure legacy TX route
+QPushButton		Copy
+QPushButton		Copy
+QPushButton		Copy
+QPushButton		Copy
+QPushButton		Journal
+QPushButton		Net
+QPushButton		Open selected journal
+QPushButton		Processes
+QPushButton		RX journal
+QPushButton		Record 15 s and play
+QPushButton		Restart TRX A service
+QPushButton		Restart TRX B service
+QPushButton		Restart both TRX services
+QPushButton		Restart legacy RX bridge
+QPushButton		Restart legacy RX service
+QPushButton		Run
+QPushButton		Run 20 s Transceiver A -> B
+QPushButton		Run preflight
+QPushButton		Run sudo
+QPushButton		Run system check
+QPushButton		Save
+QPushButton		Save CSV
+QPushButton		Serial
+QPushButton		Services
+QPushButton		Show TRX A journal
+QPushButton		Show TRX B journal
+QPushButton		Start BBB TX (budget 40)
+QPushButton		Start TRX A service
+QPushButton		Start TRX B service
+QPushButton		Start both TRX services
+QPushButton		Start legacy RX service
+QPushButton		Start monitor
+QPushButton		Start video session
+QPushButton		Stop TRX A service
+QPushButton		Stop TRX B service
+QPushButton		Stop both TRX services
+QPushButton		Stop iperf
+QPushButton		Stop journal monitor
+QPushButton		Stop legacy RX service
+QPushButton		System
+QPushButton		TRX journal
+QPushButton		Test SSH connections
+QPushButton		Test connections
+QRadioButton		TCP (clean)
+QRadioButton		UDP (low latency)
+QScrollArea		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QScrollBar		
+QSizeGrip		
+QSpinBox		
+QSpinBox		
+QSpinBox		
+QSpinBox		
+QSpinBox		
+QSpinBox		
+QSpinBox		
+QStackedWidget	qt_tabwidget_stackedwidget	
+QStatusBar		
+QTabBar	qt_tabwidget_tabbar	
+QTabWidget		
+QToolButton	ScrollLeftButton	
+QToolButton	ScrollRightButton	
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget		
+QWidget	appHeader	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_hcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_vcontainer	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+QWidget	qt_scrollarea_viewport	
+TAB	0	Control
+TAB	1	Link Quality
+TAB	2	AGC tuning (soon)
+TAB	3	Video
+TAB	4	Diagnostics
+TAB	5	Console
+TAB	6	Settings

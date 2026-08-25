@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+  <defs>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .panel { fill: #ffffff; stroke: #d0d6e0; stroke-width: 3; rx: 24; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #172033; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #172033; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #344054; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 15px; fill: #475467; }
+      .board { fill: #174a37; stroke: #0b2d22; stroke-width: 4; }
+      .led-pcb { fill: #2e6f95; stroke: #15425d; stroke-width: 5; }
+      .led { fill: #ffca3a; stroke: #9c6b00; stroke-width: 4; }
+      .lens { fill: none; stroke: #7dd3fc; stroke-width: 5; opacity: 0.9; }
+      .cable { fill: none; stroke: #1f2937; stroke-width: 7; stroke-linecap: round; }
+      .thin-cable { fill: none; stroke: #667085; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 8 8; }
+      .power { fill: none; stroke: #dc2626; stroke-width: 7; stroke-linecap: round; }
+      .signal { fill: none; stroke: #2563eb; stroke-width: 5; stroke-linecap: round; }
+      .rx { fill: #6d28d9; stroke: #3b0764; stroke-width: 4; }
+      .heatsink { fill: #cbd5e1; stroke: #64748b; stroke-width: 3; }
+      .note { fill: #fff7ed; stroke: #fb923c; stroke-width: 2; rx: 16; }
+      .mount { fill: none; stroke: #94a3b8; stroke-width: 5; stroke-dasharray: 12 10; }
+      .arrow { marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="950"/>
+
+  <text class="title" x="55" y="65">Concept rapido: modulo ottico 8 LED separato dalle board</text>
+  <text class="small" x="55" y="98">Idea meccanica: una testa LED compatta e leggera sul drone, elettronica driver/controllo in stack separato vicino al centro di massa.</text>
+
+  <!-- Left panel: top view -->
+  <rect class="panel" x="55" y="135" width="700" height="735"/>
+  <text class="title" x="90" y="190">Vista dall'alto - testa LED</text>
+
+  <!-- Drone/mount reference -->
+  <circle class="mount" cx="405" cy="500" r="260"/>
+  <line class="mount" x1="145" y1="500" x2="665" y2="500"/>
+  <line class="mount" x1="405" y1="240" x2="405" y2="760"/>
+  <line class="mount" x1="221" y1="316" x2="589" y2="684"/>
+  <line class="mount" x1="589" y1="316" x2="221" y2="684"/>
+  <text class="tiny" x="585" y="255">ingombro indicativo drone</text>
+
+  <!-- LED PCB octagon -->
+  <polygon class="led-pcb" points="405,230 596,309 675,500 596,691 405,770 214,691 135,500 214,309"/>
+  <circle cx="405" cy="500" r="156" fill="#1e5675" stroke="#0f3447" stroke-width="3"/>
+  <circle cx="405" cy="500" r="42" fill="#f8fafc" stroke="#94a3b8" stroke-width="4"/>
+  <text class="tiny" x="356" y="494">foro /</text>
+  <text class="tiny" x="349" y="514">fissaggio</text>
+
+  <!-- LEDs around ring -->
+  <g>
+    <circle class="lens" cx="405" cy="290" r="43"/><circle class="led" cx="405" cy="290" r="25"/><text class="tiny" x="386" y="296">TX1</text>
+    <circle class="lens" cx="554" cy="351" r="43"/><circle class="led" cx="554" cy="351" r="25"/><text class="tiny" x="535" y="357">TX2</text>
+    <circle class="lens" cx="615" cy="500" r="43"/><circle class="led" cx="615" cy="500" r="25"/><text class="tiny" x="596" y="506">TX3</text>
+    <circle class="lens" cx="554" cy="649" r="43"/><circle class="led" cx="554" cy="649" r="25"/><text class="tiny" x="535" y="655">TX4</text>
+    <circle class="lens" cx="405" cy="710" r="43"/><circle class="led" cx="405" cy="710" r="25"/><text class="tiny" x="386" y="716">TX5</text>
+    <circle class="lens" cx="256" cy="649" r="43"/><circle class="led" cx="256" cy="649" r="25"/><text class="tiny" x="237" y="655">TX6</text>
+    <circle class="lens" cx="195" cy="500" r="43"/><circle class="led" cx="195" cy="500" r="25"/><text class="tiny" x="176" y="506">TX7</text>
+    <circle class="lens" cx="256" cy="351" r="43"/><circle class="led" cx="256" cy="351" r="25"/><text class="tiny" x="237" y="357">TX8</text>
+  </g>
+
+  <!-- Rear connector zone -->
+  <rect x="345" y="786" width="120" height="36" rx="8" fill="#111827"/>
+  <text class="tiny" x="324" y="848">connettore unico o 8 micro-connettori</text>
+
+  <text class="label" x="112" y="820">Modulo frontale: solo LED + lenti + dissipatore</text>
+
+  <!-- Right panel: electronics stack -->
+  <rect class="panel" x="810" y="135" width="735" height="735"/>
+  <text class="title" x="845" y="190">Board separate - stack compatto</text>
+
+  <!-- LED head small side/top icon -->
+  <g transform="translate(870,255)">
+    <rect class="heatsink" x="0" y="70" width="235" height="32" rx="8"/>
+    <rect class="led-pcb" x="25" y="0" width="185" height="70" rx="16"/>
+    <circle class="led" cx="55" cy="35" r="15"/>
+    <circle class="led" cx="95" cy="35" r="15"/>
+    <circle class="led" cx="135" cy="35" r="15"/>
+    <circle class="led" cx="175" cy="35" r="15"/>
+    <text class="small" x="0" y="135">Testa ottica 8 LED</text>
+    <text class="tiny" x="0" y="160">sul bordo inferiore o su supporto dedicato</text>
+  </g>
+
+  <!-- Cable harness -->
+  <path class="cable arrow" d="M1110,325 C1190,325 1210,350 1260,395"/>
+  <path class="power" d="M1110,345 C1190,345 1205,370 1250,415"/>
+  <text class="tiny" x="1160" y="300">cavo corto: potenza LED</text>
+  <text class="tiny" x="1160" y="322">+ eventuali NTC/sense</text>
+
+  <!-- Stack boards -->
+  <g transform="translate(1245,370)">
+    <rect class="board" x="0" y="0" width="230" height="82" rx="12"/>
+    <text class="small" x="18" y="34" fill="#ffffff">Driver LED x8</text>
+    <text class="tiny" x="18" y="58" fill="#d1fae5">8 canali buck / enable</text>
+
+    <rect class="board" x="-15" y="115" width="260" height="82" rx="12"/>
+    <text class="small" x="18" y="149" fill="#ffffff">PDB + protezioni</text>
+    <text class="tiny" x="18" y="173" fill="#d1fae5">13.8 V in, fusibili, misura I</text>
+
+    <rect class="board" x="0" y="230" width="230" height="82" rx="12"/>
+    <text class="small" x="18" y="264" fill="#ffffff">STM32 + fanout</text>
+    <text class="tiny" x="18" y="288" fill="#d1fae5">OOK comune + enable settori</text>
+
+    <rect class="rx" x="20" y="360" width="190" height="70" rx="12"/>
+    <text class="small" x="42" y="393" fill="#ffffff">RX schermato</text>
+    <text class="tiny" x="40" y="416" fill="#ede9fe">lontano dai LED</text>
+  </g>
+
+  <!-- Signal path -->
+  <path class="signal arrow" d="M1280,635 C1185,625 1135,625 1065,605"/>
+  <rect x="860" y="560" width="210" height="95" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+  <text class="small" x="890" y="597">Flight controller</text>
+  <text class="tiny" x="895" y="623">UART / Ethernet / SPI</text>
+  <text class="tiny" x="895" y="645">verso STM32</text>
+
+  <!-- Notes -->
+  <rect class="note" x="855" y="710" width="645" height="105"/>
+  <text class="small" x="880" y="744">Scelta consigliata per compattezza</text>
+  <text class="tiny" x="880" y="774">1) LED su MCPCB/dissipatore unico. 2) Driver e controllo in stack separato.</text>
+  <text class="tiny" x="880" y="798">3) Un solo stream OOK comune ai canali; enable per accendere solo i settori utili.</text>
+
+  <!-- Bottom legend -->
+  <rect x="55" y="895" width="1490" height="34" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text class="tiny" x="75" y="918">Nota: è uno schizzo concettuale. Dimensioni indicative: testa LED circa 70-90 mm diametro se lenti piccole; stack elettronica circa 100 x 100 mm da ottimizzare con PCB dedicata.</text>
+</svg>

@@ -1,0 +1,10 @@
+#ifndef OPENVLC_BOARD_H
+#define OPENVLC_BOARD_H
+
+#include "stm32h7xx_hal.h"
+
+#define OPENVLC_TX_GPIO_PORT GPIOB
+#define OPENVLC_TX_GPIO_PIN  GPIO_PIN_4
+
+#endif
+
