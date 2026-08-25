@@ -47,3 +47,13 @@ to destroy reception — the transmitter occupies roughly 90% of the frame
 period, so there is no dark window to receive in. The fix is optical isolation
 between the two, which is where this area meets `hardware/` and
 `mechanical_design/`.
+
+## Licence
+
+MIT — see [`LICENSE`](LICENSE).
+
+The Arm CMSIS and STMicroelectronics driver trees under
+`communications/openvlc/firmware-v*/Drivers/` are redistributed under their own
+Apache-2.0 and BSD-3-Clause terms, and `hardware/` is board design data rather
+than software. [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md) sets out what
+the MIT licence does and does not cover.
