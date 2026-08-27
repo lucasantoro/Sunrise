@@ -3,6 +3,8 @@
 set -euo pipefail
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+# These scripts live in install/; everything they read lives one level up.
+ROOT_DIR=$(cd -- "$SCRIPT_DIR/.." && pwd)
 
 if [ "$(id -u)" -ne 0 ]; then
     exec sudo bash "$0" "$@"

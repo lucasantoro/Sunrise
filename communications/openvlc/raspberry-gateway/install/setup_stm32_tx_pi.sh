@@ -3,6 +3,8 @@
 set -euo pipefail
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+# These scripts live in install/; everything they read lives one level up.
+ROOT_DIR=$(cd -- "$SCRIPT_DIR/.." && pwd)
 SERIAL_PORT=${OPENVLC_SERIAL_PORT:-auto}
 SERIAL_BAUD=${OPENVLC_SERIAL_BAUD:-2000000}
 TUN_DEVICE=${OPENVLC_TUN_DEVICE:-tun0}
