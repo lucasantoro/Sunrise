@@ -24,14 +24,14 @@ cleaned before DMA starts.
 Build from PowerShell if desired:
 
 ```powershell
-cd Z:\Projects\Sunrise\communications\openvlc\stm32-transceiver-pi-hat-v2
+cd Z:\Projects\Sunrise\communications\openvlcirmware-v3
 .\tools\build_cubeide_debug.ps1
 ```
 
 The ELF is:
 
 ```text
-STM32CubeIDE/Debug/stm32-transceiver-pi-hat-v2.elf
+STM32CubeIDE/Debug/firmware-v3.elf
 ```
 
 After CubeMX regeneration, verify PB0, low comparator hysteresis, TIM2 CH4

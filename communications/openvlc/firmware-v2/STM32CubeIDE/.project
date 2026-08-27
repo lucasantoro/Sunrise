@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>stm32-transceiver-pi-hat-v2</name>
+	<name>firmware-v2</name>
 	<comment>OpenVLC full-duplex transceiver for the STM32H723VET6 Raspberry Pi HAT</comment>
 	<projects>
 	</projects>
